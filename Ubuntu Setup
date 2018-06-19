@@ -1,0 +1,27 @@
+apt-get install software-properties-common python-software-properties
+apt-add-repository ppa:webupd8team/java
+apt-get update
+apt-get -y install xubuntu-desktop vnc4server oracle-java8-installer
+vncserver
+vncserver -kill :1
+rm .vnc/xstartup
+wget https://raw.githubusercontent.com/rekkke/xstartup/master/xstartup
+chmod +x xstartup
+mv xstartup .vnc/
+vncserver
+cd Desktop
+mkdir Bots
+cd Bots
+wget https://osbot.org/mvc/get
+wget http://cdn.rsbuddy.com/live/f/loader/OSBuddy.jar?x=10
+wget https://tribot.org/bin/TRiBot_Loader.jar
+wget http://topbot.org/resources/topbot.jar
+wget http://www.powerbot.org/download/
+cd
+cd Desktop
+mkdir Wallpapers
+cd Wallpapers
+wget https://tarteka.net/wp-content/uploads/2014/08/summer.png
+wget http://2.bp.blogspot.com/-pkqYaOqYSXc/UCPv2c1hQSI/AAAAAAAAAFk/A6P5fRk2ltA/s1600/simple_Desktop_wallpaper.Jpg
+wget http://nexus-wallpaper.com/wp-content/uploads/2013/03/space-invaders-modern-simplistic-wallpaper.jpg
+wget http://i.imgur.com/LGbSm6Q.jpg
